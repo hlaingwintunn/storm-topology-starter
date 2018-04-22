@@ -13,6 +13,17 @@
   	<project.build.soruceEncoding>UTF-8</project.build.soruceEncoding>
   </properties>
   
+    <repositories>
+    <repository>
+      <id>github-releases</id>
+      <url>http://oss.sonatype.org/content/repositories/github-releases/</url>
+    </repository>
+    <repository>
+      <id>clojars.org</id>
+      <url>http://clojars.org/repo</url>
+    </repository>
+  </repositories>
+  
   <dependencies>
 		<!-- https://mvnrepository.com/artifact/org.apache.storm/storm-core -->
 		<dependency>
@@ -20,6 +31,12 @@
 		    <artifactId>storm-core</artifactId>
 		    <version>1.2.1</version>
 		    <scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.clojure</groupId>
+			<artifactId>clojure</artifactId>
+			<version>1.7.0</version>
 		</dependency>
 		
 		<!-- https://mvnrepository.com/artifact/junit/junit -->

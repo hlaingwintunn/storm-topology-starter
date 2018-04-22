@@ -11,7 +11,6 @@ import org.apache.storm.tuple.Tuple;
 import org.apache.storm.tuple.Values;
 
 public class CallLogCreatorBolt implements IRichBolt {
-
 	private static final long serialVersionUID = 6467345302540348182L;
 	
 	//Create instance for output collector which collects and emits tuples to produce output
